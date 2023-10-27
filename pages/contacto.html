@@ -6,24 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Miau Café</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body>
+<body class="container">
     <header>
-        <a href="../index.html">
+        <a href="../index.html" class="d-flex justify-content-center">
             <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
         </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="michis.html">Nuestros michis</a></li>
-                <li><a href="acerca.html">Acerca</a></li>
-                <li><a href="contacto.html" class="seleccion">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-brown">
+            <div class="container">
+                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./michis.html">Nuestros michis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./acerca.html">Acerca</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <h1>Contacto</h1>
@@ -83,6 +103,7 @@
             <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
