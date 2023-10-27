@@ -18,18 +18,18 @@ header {
 }
 
 .navbar {
-    overflow: hidden;
     background-color: #5C3D2E;
 }
 
 .navbar li {
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
     /* Espacio entre elementos de la lista */
 }
 
 .nav-link:hover {
     text-decoration: underline;
-    color: null !important
+    color: #B85C38
 }
 
 /* Estilo para los enlaces */
@@ -41,6 +41,20 @@ header {
 
 .active {
     background-color: #B85C38;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #B85C38;
+}
+
+#activo {
+    color: black;
+}
+
+.card-title {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
 }
 
 .imagen {
@@ -61,8 +75,7 @@ footer {
 }
 
 .logofoot {
-    height: 125px;
-    width: auto;
+    filter: brightness(0) invert(1) sepia(1) hue-rotate(30deg);
 }
 
 .iconos {

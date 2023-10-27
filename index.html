@@ -12,32 +12,32 @@
     <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="container">
+<body class="container-fluid p-3">
     <header>
         <a href="./index.html" class="d-flex justify-content-center">
             <img src="./assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
         </a>
         <nav class="navbar navbar-expand-lg navbar-light bg-brown">
             <div class="container">
-                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
+                        <li class="nav-item text-center">
+                            <a class="nav-link active" aria-current="page" href="#" id="activo">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-center">
                             <a class="nav-link" href="./pages/galeria.html">Galería</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-center">
                             <a class="nav-link" href="./pages/michis.html">Nuestros michis</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-center">
                             <a class="nav-link" href="./pages/acerca.html">Acerca</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item text-center">
                             <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
                     </ul>
@@ -46,10 +46,10 @@
         </nav>
     </header>
     <main>
-        <div class="card bg-dark text-black text-center ">
+        <div class="card bg-dark text-black text-center d-none d-lg-block">
             <img src="./assets/img/banner.jpeg" class="card-img" alt="Banner Miau Cafe">
             <div class="card-img-overlay">
-                <h1 class="card-title">Miau Cafe</h1>
+                <h1 class="card-title ">Miau Cafe</h1>
                 <p class="card-text">Un café para ronronear</p>
             </div>
         </div>
@@ -92,10 +92,12 @@
         </div>
     </main>
     <footer>
-        <div class="row">
-            <img src="./assets/img/logo_cat_cafe.png" alt=" Logo" class="logofoot col-lg-6">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
+        <div class="d-flex justify-content-between px-3">
+            <img src="./assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot">
+            <div class="pt-4 ">
+                <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+            </div>
         </div>
         <div class="iconos text-center">
             <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
