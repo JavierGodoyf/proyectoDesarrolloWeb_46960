@@ -12,19 +12,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body class="container">
-    <header>
-        <a href="../index.html" class="d-flex justify-content-center">
-            <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
-        </a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-brown">
+<body class="container-fluid p-3">
+
+    <body class="container-fluid p-3">
+        <header>
+            <a href="../index.html" class="d-flex align-items-center justify-content-center">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
+                <div class="text-center mx-4 pt-3">
+                    <h1 class="mb-0">Miau café</h1>
+                    <p>Un café para ronronear</p>
+                </div>
+            </a>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
             <div class="container">
-                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 mx-auto ">
+                    <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
                         <li class="nav-item text-center">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
@@ -38,72 +45,76 @@
                             <a class="nav-link" href="./acerca.html">Acerca</a>
                         </li>
                         <li class="nav-item text-center">
-                            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="#" id="activo">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
-        <h1>Contacto</h1>
-        <section>
-            <h2>¡Dejanos tus comentarios!</h2>
-            <p>¿Tienes preguntas, comentarios o simplemente quieres saludar a nuestros adorables gatos? Estamos
-                encantados de escucharte. En Miau Café, valoramos tu retroalimentación y estamos aquí para ayudarte en
-                lo que necesites. No dudes en contactarnos a través de los siguientes medios. Estamos ansiosos por
-                recibir tus mensajes y conocerte mejor. ¡Hablemos!</p>
-            <form action="">
+        <main>
+            <h1>Contacto</h1>
+            <section>
+                <h2>¡Dejanos tus comentarios!</h2>
+                <p>¿Tienes preguntas, comentarios o simplemente quieres saludar a nuestros adorables gatos? Estamos
+                    encantados de escucharte. En Miau Café, valoramos tu retroalimentación y estamos aquí para ayudarte
+                    en
+                    lo que necesites. No dudes en contactarnos a través de los siguientes medios. Estamos ansiosos por
+                    recibir tus mensajes y conocerte mejor. ¡Hablemos!</p>
+                <form action="">
+                    <div>
+                        <label for=" nombre">Nombre*</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
+                        <label for="apellido">Apellido*</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required>
+                    </div>
+                    <div>
+                        <label for="mail">Email*</label>
+                        <input type="email" id="mail" name="email" placeholder="ejemplo@servidor.com" required>
+                    </div>
+                    <div>
+                        <div><label for="comentario">Comentario</label></div>
+                        <textarea name="comentario" id="comentario" cols="60" rows="5"
+                            placeholder="Ingrese su comentario"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar Formulario">
+                        <input type="reset" value="Limpiar Formulario">
+                    </div>
+                </form>
+            </section>
+            <section>
                 <div>
-                    <label for="nombre">Nombre*</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
-                    <label for="apellido">Apellido*</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required>
+                    <h2>¡Ven a visitarnos!</h2>
+                    <p>¡Te invitamos a visitarnos en nuestro acogedor rincón de gatos en Viña del Mar! Estamos
+                        ubicados en
+                        una de las zonas más encantadoras de la ciudad, donde podrás disfrutar de la brisa marina y,
+                        por
+                        supuesto, de la compañía de nuestros gatos.</p>
                 </div>
                 <div>
-                    <label for="mail">Email*</label>
-                    <input type="email" id="mail" name="email" placeholder="ejemplo@servidor.com" required>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53534.9942405545!2d-71.6081948194918!3d-33.005432700411276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de84ead41255%3A0x8e5fde76df3d413f!2zVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1696549404709!5m2!1ses-419!2scl"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div>
-                    <div><label for="comentario">Comentario</label></div>
-                    <textarea name="comentario" id="comentario" cols="60" rows="5"
-                        placeholder="Ingrese su comentario"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
-                </div>
-            </form>
-        </section>
-        <section>
-            <div>
-                <h2>¡Ven a visitarnos!</h2>
-                <p>¡Te invitamos a visitarnos en nuestro acogedor rincón de gatos en Viña del Mar! Estamos ubicados en
-                    una de las zonas más encantadoras de la ciudad, donde podrás disfrutar de la brisa marina y, por
-                    supuesto, de la compañía de nuestros gatos.</p>
-            </div>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53534.9942405545!2d-71.6081948194918!3d-33.005432700411276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de84ead41255%3A0x8e5fde76df3d413f!2zVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1696549404709!5m2!1ses-419!2scl"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
 
-        </section>
-    </main>
-    <footer>
-        <div>
-            <img src="../assets/img/logo_cat_cafe.png" alt=" Logo" class="logo logofoot">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
-        </div>
-        <div class="iconos">
-            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-    </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+            </section>
+        </main>
+        <footer>
+            <div class="d-flex justify-content-between px-3">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot">
+                <div class="pt-4 ">
+                    <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                    <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+                </div>
+            </div>
+            <div class="iconos text-center">
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
 
 </html>

@@ -12,47 +12,58 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body class="container">
+<body class="container-fluid p-3">
     <header>
-        <a href="../index.html" class="d-flex justify-content-center">
+        <a href="../index.html" class="d-flex align-items-center justify-content-center">
             <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
-        </a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-brown">
-            <div class="container">
-                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 mx-auto ">
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link active" aria-current="page" href="#"">Galería</a>
-                        </li>
-                        <li class=" nav-item text-center">
-                                <a class="nav-link" href="./michis.html">Nuestros michis</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="./acerca.html">Acerca</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="text-center mx-4 pt-3">
+                <h1 class="mb-0">Miau café</h1>
+                <p>Un café para ronronear</p>
             </div>
-        </nav>
+        </a>
     </header>
-    <main>
-        <h1>Galería</h1>
-        <p>En Miau Café, creemos en cautivar todos tus sentidos, y la vista es uno de los más importantes. Te invitamos
-            a explorar nuestra vibrante galería de imágenes que capturan la esencia de la felicidad gatuna y la
-            exquisitez de nuestras bebidas y alimentos. Desde gatos que derrochan amor hasta tazas de café humeante y
-            bocados tentadores, nuestra galería te sumergirá en un mundo de emociones y sabores. Desplázate a través de
-            nuestras fotos y deja que la belleza y la alegría de Miau Café te inspiren a planificar tu próxima visita.
-            ¡Prepárate para un recorrido visual que te hará ronronear de placer!</p>
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
+        <div class="container">
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#" id="activo">Galería</a>
+                    </li>
+                    <li class=" nav-item text-center">
+                        <a class="nav-link" href="./michis.html">Nuestros michis</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./acerca.html">Acerca</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-2">
+        <div class="container my-5">
+            <h1 class="text-center">Galería</h1>
+            <p class="text-center">En Miau Café, creemos en cautivar todos tus sentidos, y la vista es uno de los
+                más
+                importantes. Te invitamos
+                a explorar nuestra vibrante galería de imágenes que capturan la esencia de la felicidad gatuna y la
+                exquisitez de nuestras bebidas y alimentos. Desde gatos que derrochan amor hasta tazas de café humeante
+                y
+                bocados tentadores, nuestra galería te sumergirá en un mundo de emociones y sabores. Desplázate a través
+                de
+                nuestras fotos y deja que la belleza y la alegría de Miau Café te inspiren a planificar tu próxima
+                visita.
+                ¡Prepárate para un recorrido visual que te hará ronronear de placer!</p>
+        </div>
         <div class="d-flex flex-wrap justify-content-center">
             <img src="../assets/img/carta1.jpg" class="col-sm-12 col-lg-3 rounded-3 m-3" alt="">
             <img src="../assets/img/carta2.jpg" class="col-sm-12 col-lg-3 rounded-3 m-3" alt="">
@@ -63,12 +74,14 @@
         </div>
     </main>
     <footer>
-        <div>
-            <img src="../assets/img/logo_cat_cafe.png" alt=" Logo" class="logo logofoot">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
+        <div class="d-flex justify-content-between px-3">
+            <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot">
+            <div class="pt-4 ">
+                <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+            </div>
         </div>
-        <div class="iconos">
+        <div class="iconos text-center">
             <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>

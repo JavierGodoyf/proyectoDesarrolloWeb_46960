@@ -12,84 +12,103 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body class="container">
+<body class="container-fluid p-3">
     <header>
-        <a href="../index.html" class="d-flex justify-content-center">
+        <a href="../index.html" class="d-flex align-items-center justify-content-center">
             <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
+            <div class="text-center mx-4 pt-3">
+                <h1 class="mb-0">Miau café</h1>
+                <p>Un café para ronronear</p>
+            </div>
         </a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-brown">
-            <div class="container">
-                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 mx-auto ">
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="./galeria.html">Galería</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link active" aria-current="page" href="#">Nuestros michis</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="./acerca.html">Acerca</a>
-                        </li>
-                        <li class="nav-item text-center">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
+        <div class="container">
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#" id="activo">Nuestros michis</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./acerca.html">Acerca</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-2">
+        <h1 class="text-center">Conoce a nuestros michis!</h1>
+        <section class="container my-5 ">
+            <div class="row d-flex justify-content-around">
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/img/gato1.jpg" class="card-img-top rounded-5 " alt="...">
+                    <div class="card-body">
+                        <h2 class="text-center">Hecate</h2>
+                        Hecate es una gata tricolor muy cariñosa y juguetona que roba corazones en Miau Café. Con su
+                        actitud
+                        juguetona y su amor por la diversión, Hecate es la compañía perfecta para aquellos que buscan
+                        una
+                        interacción llena de alegría y vitalidad.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/img/gato2.jpg" class="card-img-top rounded-5 " alt="...">
+                    <div class="card-body">
+                        <h2 class="text-center">Amy</h2>
+                        Amy es la soñadora de Miau Café. Siempre puedes encontrarla disfrutando de una siesta tranquila
+                        en su
+                        rincón favorito. Su serenidad y calma son reconfortantes, y pasar tiempo a su lado es como
+                        encontrar un
+                        oasis de paz en medio del bullicio.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/img/gato3.jpg" class="card-img-top rounded-5 " alt="...">
+                    <div class="card-body">
+                        <h2 class="text-center">Rory</h2>
+                        Rory es el aventurero del grupo. Siempre en busca de diversión, es un experto en juegos y
+                        travesuras. Su
+                        energía y entusiasmo son contagiosos, y es el gato perfecto para aquellos que buscan una
+                        experiencia
+                        llena de vitalidad.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;">
+                    <img src="../assets/img/gato1.jpg" class="card-img-top rounded-5 " alt="...">
+                    <div class="card-body">
+                        <h2 class="text-center">Benito</h2>
+                        Benito es el rey de la elegancia en Miau Café. Con su pelaje exuberante y sus ojos curiosos, es
+                        imposible
+                        no enamorarse de su encanto. Siempre dispuesto a recibir caricias y a posar para las fotos,
+                        Benito es el
+                        anfitrión perfecto en nuestro café.</p>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="my-3">
-            <h2>
-                Hecate
-            </h2>
-            <p>Hecate es una gata tricolor muy cariñosa y juguetona que roba corazones en Miau Café. Con su actitud
-                juguetona y su amor por la diversión, Hecate es la compañía perfecta para aquellos que buscan una
-                interacción llena de alegría y vitalidad.</p>
-            <img src="../assets/img/gato1.jpg" class="img-fluid" alt="">
-        </section>
-        <section class="my-3">
-            <h2>
-                Luna
-            </h2>
-            <p>Luna es la soñadora de Miau Café. Siempre puedes encontrarla disfrutando de una siesta tranquila en su
-                rincón favorito. Su serenidad y calma son reconfortantes, y pasar tiempo a su lado es como encontrar un
-                oasis de paz en medio del bullicio.</p>
-            <img src="../assets/img/gato2.jpg" class="img-fluid" alt="">
-        </section>
-        <section class="my-3">
-            <h2>
-                Simon
-            </h2>
-            <p>Simón es el aventurero del grupo. Siempre en busca de diversión, es un experto en juegos y travesuras. Su
-                energía y entusiasmo son contagiosos, y es el gato perfecto para aquellos que buscan una experiencia
-                llena de vitalidad.</p>
-            <img src="../assets/img/gato3.jpg" class="img-fluid" alt="">
-        </section>
-        <section class="my-3">
-            <h2>
-                Benito
-            </h2>
-            <p>Benito es el rey de la elegancia en Miau Café. Con su pelaje exuberante y sus ojos curiosos, es imposible
-                no enamorarse de su encanto. Siempre dispuesto a recibir caricias y a posar para las fotos, Benito es el
-                anfitrión perfecto en nuestro café.</p>
-            <img src="../assets/img/gato1.jpg" class="img-fluid" alt="">
         </section>
     </main>
     <footer>
-        <div>
-            <img src="../assets/img/logo_cat_cafe.png" alt=" Logo" class="logo logofoot">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
+        <div class="d-flex justify-content-between px-3">
+            <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot">
+            <div class="pt-4 ">
+                <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+            </div>
         </div>
-        <div class="iconos">
+        <div class="iconos text-center">
             <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>

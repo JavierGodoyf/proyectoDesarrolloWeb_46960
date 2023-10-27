@@ -12,19 +12,26 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body class="container">
-    <header>
-        <a href="../index.html" class="d-flex justify-content-center">
-            <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
-        </a>
-        <nav class="navbar navbar-expand-lg navbar-light bg-brown">
+<body class="container-fluid p-3">
+
+    <body class="container-fluid p-3">
+        <header>
+            <a href="../index.html" class="d-flex align-items-center justify-content-center">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
+                <div class="text-center mx-4 pt-3">
+                    <h1 class="mb-0">Miau café</h1>
+                    <p>Un café para ronronear</p>
+                </div>
+            </a>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
             <div class="container">
-                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center " id="navbarTogglerDemo02">
-                    <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0 mx-auto ">
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
                         <li class="nav-item text-center">
                             <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
@@ -35,58 +42,65 @@
                             <a class="nav-link" href="./michis.html">Nuestros michis</a>
                         </li>
                         <li class="nav-item text-center">
-                            <a class="nav-link active" aria-current="page" href="#"">Acerca</a>
+                            <a class="nav-link active" aria-current="page" href="#" id="activo">Acerca</a>
                         </li>
                         <li class=" nav-item text-center">
-                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
-    <main>
-        <section>
-            <div>
-                <h1 class="titulos">Acerca</h1>
-                <p>La historia de Miau Café comenzó con la visión de crear un espacio donde los amantes de los gatos
-                    pudieran disfrutar de la compañía de estos encantadores felinos mientras saborean una taza de café o
-                    té. Fundada por un grupo de apasionados dueños de gatos, nuestra cafetería es el hogar permanente de
-                    una pandilla de gatos consentidos que forman parte integral de nuestra familia y, por supuesto, de
-                    la experiencia que ofrecemos a nuestros visitantes.
+        <main>
+            <section>
+                <div>
+                    <h1 class="titulos">Acerca</h1>
+                    <p>La historia de Miau Café comenzó con la visión de crear un espacio donde los amantes de los gatos
+                        pudieran disfrutar de la compañía de estos encantadores felinos mientras saborean una taza de
+                        café o
+                        té. Fundada por un grupo de apasionados dueños de gatos, nuestra cafetería es el hogar
+                        permanente de
+                        una pandilla de gatos consentidos que forman parte integral de nuestra familia y, por supuesto,
+                        de
+                        la experiencia que ofrecemos a nuestros visitantes.
 
-                    En Miau Café, nos enorgullece brindar un entorno seguro y acogedor para nuestros gatos, garantizando
-                    que vivan vidas felices y saludables. Cada uno de ellos tiene su propia historia y personalidad
-                    única, lo que agrega un toque especial a la atmósfera de nuestra cafetería. Ven y únete a nuestra
-                    historia, donde la pasión por los gatos y la pasión por el café se unen para crear un lugar mágico
-                    donde el amor felino es una constante. ¡Bienvenido a Miau Café, donde nuestros gatos son parte
-                    esencial de nuestra familia y de tu experiencia inolvidable!</p>
+                        En Miau Café, nos enorgullece brindar un entorno seguro y acogedor para nuestros gatos,
+                        garantizando
+                        que vivan vidas felices y saludables. Cada uno de ellos tiene su propia historia y personalidad
+                        única, lo que agrega un toque especial a la atmósfera de nuestra cafetería. Ven y únete a
+                        nuestra
+                        historia, donde la pasión por los gatos y la pasión por el café se unen para crear un lugar
+                        mágico
+                        donde el amor felino es una constante. ¡Bienvenido a Miau Café, donde nuestros gatos son parte
+                        esencial de nuestra familia y de tu experiencia inolvidable!</p>
+                </div>
+                <div>
+                    <img src="../assets/img/logo_cat_cafeold.png" alt="">
+                </div>
+                <div>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/KmeSy7FPdCA?si=zeQ-2SmNcNuZqREB&amp;controls=0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="d-flex justify-content-between px-3">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot">
+                <div class="pt-4 ">
+                    <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                    <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+                </div>
             </div>
-            <div>
-                <img src="../assets/img/logo_cat_cafeold.png" alt="">
+            <div class="iconos text-center">
+                <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </div>
-            <div>
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/KmeSy7FPdCA?si=zeQ-2SmNcNuZqREB&amp;controls=0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            <img src="../assets/img/logo_cat_cafe.png" alt=" Logo" class="logo logofoot">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
-        </div>
-        <div class="iconos">
-            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        </div>
-    </footer>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+    </body>
 
 </html>

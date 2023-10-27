@@ -5,11 +5,18 @@
     font-family: 'Gabarito', sans-serif;
 }
 
-
-
 header {
     background-color: #FFEBC9;
     border-radius: 14px 14px 0px 0px;
+
+    :hover {
+        color: black
+    }
+}
+
+header a {
+    text-decoration: none;
+    color: black;
 }
 
 .logo {
@@ -52,20 +59,14 @@ header {
     color: black;
 }
 
-.card-title {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(8px);
+.card {
+    border-radius: 0px 0px 14px 14px;
 }
 
 .imagen {
     height: auto;
     width: 100vh;
 }
-
-
-
-
-
 
 footer {
     padding: 10px;
@@ -89,4 +90,8 @@ footer {
     color: #FFEBC9;
     padding: 10px;
     font-size: 50px;
+
+    :hover {
+        color: #B85C38;
+    }
 }
