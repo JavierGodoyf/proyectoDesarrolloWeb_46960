@@ -19,6 +19,10 @@ header a {
     color: black;
 }
 
+nav {
+    border-radius: 0px 0px 14px 14px;
+}
+
 .logo {
     height: 125px;
     width: auto;
@@ -63,9 +67,26 @@ header a {
     border-radius: 0px 0px 14px 14px;
 }
 
-.imagen {
-    height: auto;
-    width: 100vh;
+.btn-color {
+    background-color: #B85C38;
+    color: #FFEBC9;
+    border: none;
+}
+
+.btn-color:hover {
+    background-color: #5C3D2E;
+    color: #FFEBC9
+}
+
+.btn-alt {
+    background-color: #FFEBC9;
+    color: #5C3D2E;
+    border: none;
+}
+
+.btn-alt:hover {
+    background-color: #5C3D2E;
+    color: #FFEBC9
 }
 
 footer {
@@ -80,12 +101,10 @@ footer {
 }
 
 .iconos {
-
     margin-top: 10px;
 }
 
 .iconos a {
-
     text-decoration-line: none;
     color: #FFEBC9;
     padding: 10px;
@@ -94,4 +113,8 @@ footer {
     :hover {
         color: #B85C38;
     }
+}
+
+.bordes {
+    border-radius: 14px 14px 14px 14px;
 }
