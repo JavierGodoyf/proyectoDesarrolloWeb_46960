@@ -8,16 +8,17 @@
 header {
     background-color: #FFEBC9;
     border-radius: 14px 14px 0px 0px;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    :hover {
-        color: black
-    }
 }
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    color: black
+}
+
 
 .logo {
     height: 125px;
@@ -109,10 +110,10 @@ footer {
     color: #FFEBC9;
     padding: 10px;
     font-size: 50px;
+}
 
-    :hover {
-        color: #B85C38;
-    }
+.iconos a:hover {
+    color: #B85C38;
 }
 
 .bordes {
