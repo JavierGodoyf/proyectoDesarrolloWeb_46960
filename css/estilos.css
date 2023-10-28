@@ -9,23 +9,23 @@ header {
     background-color: #FFEBC9;
     border-radius: 14px 14px 0px 0px;
 
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     :hover {
         color: black
     }
 }
 
-header a {
-    text-decoration: none;
-    color: black;
+.logo {
+    height: 125px;
+    width: auto;
 }
 
 nav {
     border-radius: 0px 0px 14px 14px;
-}
-
-.logo {
-    height: 125px;
-    width: auto;
 }
 
 .navbar {
@@ -63,8 +63,8 @@ nav {
     color: black;
 }
 
-.card {
-    border-radius: 0px 0px 14px 14px;
+.card-img {
+    border-radius: 14px 14px 14px 14px;
 }
 
 .btn-color {
