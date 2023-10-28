@@ -6,46 +6,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria | Miau Café</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body>
+<body class="container-fluid p-3">
     <header>
-        <a href="../index.html">
+        <a href="../index.html" class="d-flex align-items-center justify-content-center">
             <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
+            <div class="text-center mx-4 pt-3">
+                <h1 class="mb-0">Miau café</h1>
+                <p>Un café para ronronear</p>
+            </div>
         </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="galeria.html" class="seleccion">Galería</a></li>
-                <li><a href="michis.html">Nuestros michis</a></li>
-                <li><a href="acerca.html">Acerca</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
     </header>
-    <main>
-        <h1>Galería</h1>
-        <img src="../assets/img/carta1.jpg" alt="">
-        <img src="../assets/img/carta2.jpg" alt="">
-        <img src="../assets/img/carta3.jpg" alt="">
-        <img src="../assets/img/carta4.jpg" alt="">
-        <img src="../assets/img/carta5.jpg" alt="">
-        <img src="../assets/img/carta6.jpg" alt="">
-    </main>
-    <footer>
-        <div>
-            <img src="../assets/img/logo_cat_cafe.png" alt=" Logo" class="logofoot">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
+    <!--intente poner el navbar sticky cuando bajara pero no funcionaba dentro del header y fuera de el funciona correctamente-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
+        <div class="container">
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#" id="activo">Galería</a>
+                    </li>
+                    <li class=" nav-item text-center">
+                        <a class="nav-link" href="./michis.html">Nuestros michis</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./acerca.html">Acerca</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="iconos">
-            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </nav>
+    <main class="mt-2">
+        <div class="container my-5">
+            <h1 class="text-center">Galería</h1>
+            <p class="text-center">En Miau Café, creemos en cautivar todos tus sentidos, y la vista es uno de los
+                más
+                importantes. Te invitamos
+                a explorar nuestra vibrante galería de imágenes que capturan la esencia de la felicidad gatuna y la
+                exquisitez de nuestras bebidas y alimentos. Desde gatos que derrochan amor hasta tazas de café humeante
+                y
+                bocados tentadores, nuestra galería te sumergirá en un mundo de emociones y sabores. Desplázate a través
+                de
+                nuestras fotos y deja que la belleza y la alegría de Miau Café te inspiren a planificar tu próxima
+                visita.
+                ¡Prepárate para un recorrido visual que te hará ronronear de placer!</p>
+        </div>
+        <div class="d-flex flex-wrap justify-content-center">
+            <img src="../assets/img/carta1.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="">
+            <img src="../assets/img/carta2.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="">
+            <img src="../assets/img/carta3.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="">
+            <img src="../assets/img/carta4.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="">
+            <img src="../assets/img/carta5.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="">
+            <img src="../assets/img/carta6.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="">
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="d-flex justify-content-between px-3 flex-wrap mx-auto ">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot col-12 col-lg-1 mx-auto">
+                <div class="pt-4 col-12 col-lg-7">
+                    <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                    <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+                    <p>Horario <i class="fa-solid fa-clock"></i> : Lunes a domingo - 9:00 hrs a 20:00 hrs</p>
+                </div>
+                <div class="iconos col-12 col-lg-3 text-center">
+                    <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

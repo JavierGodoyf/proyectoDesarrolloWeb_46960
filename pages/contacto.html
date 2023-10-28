@@ -6,78 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Miau Café</title>
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
 </head>
 
-<body>
+<body class="container-fluid p-3">
     <header>
-        <a href="../index.html">
+        <a href="../index.html" class="d-flex align-items-center justify-content-center">
             <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
+            <div class="text-center mx-4 pt-3">
+                <h1 class="mb-0">Miau café</h1>
+                <p>Un café para ronronear</p>
+            </div>
         </a>
-        <nav class="nav">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="michis.html">Nuestros michis</a></li>
-                <li><a href="acerca.html">Acerca</a></li>
-                <li><a href="contacto.html" class="seleccion">Contacto</a></li>
-            </ul>
     </header>
-    <main>
-        <h1>Contacto</h1>
+    <!--intente poner el navbar sticky cuando bajara pero no funcionaba dentro del header y fuera de el funciona correctamente-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
+        <div class="container">
+            <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mt-2 mt-lg-0 mb-lg-0 mx-auto ">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./galeria.html">Galería</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./michis.html">Nuestros michis</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="./acerca.html">Acerca</a>
+                    </li>
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#" id="activo">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="mt-2">
+
         <section>
-            <h2>¡Dejanos tus comentarios!</h2>
-            <form action="">
-                <div>
-                    <label for="nombre">Nombre*</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" required>
-                    <label for="apellido">Apellido*</label>
-                    <input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" required>
+            <div class="container my-5 text-center">
+                <h1>¡Déjanos tus comentarios!</h1>
+                <p>¿Tienes preguntas, comentarios o simplemente quieres saludar a nuestros adorables gatos? Estamos
+                    encantados de escucharte. En Miau Café, valoramos tu retroalimentación y estamos aquí para ayudarte
+                    en
+                    lo que necesites. No dudes en contactarnos a través de los siguientes medios. Estamos ansiosos por
+                    recibir tus mensajes y conocerte mejor. ¡Hablemos!</p>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="nombre" class="form-label">Nombre*</label>
+                                        <input type="text" class="form-control" id="nombre"
+                                            placeholder="Ingrese su Nombre" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="apellido" class="form-label">Apellido*</label>
+                                        <input type="text" class="form-control" id="apellido"
+                                            placeholder="Ingrese su Apellido" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email*</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@servidor.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comentario" class="form-label">Comentario</label>
+                                <textarea class="form-control" id="comentario" rows="5"
+                                    placeholder="Ingrese su comentario"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-color ">Enviar Formulario</button>
+                                <button type="reset" class="btn btn-alt">Limpiar Formulario</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div>
-                    <label for="mail">Email*</label>
-                    <input type="email" id="mail" name="email" placeholder="ejemplo@servidor.com" required>
-                </div>
-                <div>
-                    <div><label for="comentario">Comentario</label></div>
-                    <textarea name="comentario" id="comentario" cols="60" rows="5"
-                        placeholder="Ingrese su comentario"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar Formulario">
-                    <input type="reset" value="Limpiar Formulario">
-                </div>
-            </form>
+            </div>
         </section>
         <section>
-            <div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53534.9942405545!2d-71.6081948194918!3d-33.005432700411276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de84ead41255%3A0x8e5fde76df3d413f!2zVmnDsWEgZGVsIE1hciwgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1696549404709!5m2!1ses-419!2scl"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container my-5 text-center">
+                <h2>¡Ven a visitarnos!</h2>
+                <p>¡Te invitamos a visitarnos en nuestro acogedor rincón de gatos en Viña del Mar! Estamos ubicados en
+                    una
+                    de las zonas más encantadoras de la ciudad, donde podrás disfrutar de la brisa marina y, por
+                    supuesto,
+                    de la compañía de nuestros gatos.</p>
             </div>
             <div>
-                <h2>subtitulo</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, ex odio! Possimus tempore adipisci,
-                    alias voluptatum saepe obcaecati debitis minima velit quisquam quia repudiandae assumenda recusandae
-                    doloribus delectus nobis temporibus!</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53534.9942405545!2d-71.6081948194918!3d-33.005432700411276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de84ead41255%3A0x8e5fde76df3d413f!2zVmnDsWEgZGVsIE1arcaCw7WpvcywgVmFscGFyYcOtc28!5e0!3m2!1ses-419!2scl!4v1696549404709!5m2!1ses-419!2scl"
+                    width="100%" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="bordes"></iframe>
             </div>
         </section>
     </main>
-    <footer>
-        <div>
-            <img src="../assets/img/logo_cat_cafe.png" alt=" Logo" class="logofoot">
-            <p>Dirección: Algún lugar de Viña del Mar, Local 3</p>
-            <p>Teléfono: +56 9 8765 4321</p>
-        </div>
-        <div class="iconos">
-            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="d-flex justify-content-between px-3 flex-wrap mx-auto ">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot col-12 col-lg-1 mx-auto">
+                <div class="pt-4 col-12 col-lg-7">
+                    <p>Dirección <i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                    <p>Teléfono <i class="fa-solid fa-phone"></i> : +56 9 8765 4321</p>
+                    <p>Horario <i class="fa-solid fa-clock"></i> : Lunes a domingo - 9:00 hrs a 20:00 hrs</p>
+                </div>
+                <div class="iconos col-12 col-lg-3 text-center">
+                    <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

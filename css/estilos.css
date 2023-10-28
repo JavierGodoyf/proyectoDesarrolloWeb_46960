@@ -5,91 +5,88 @@
     font-family: 'Gabarito', sans-serif;
 }
 
-body {
-    margin: 30px;
-}
-
 header {
     background-color: #FFEBC9;
     border-radius: 14px 14px 0px 0px;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    :hover {
+        color: black
+    }
 }
 
 .logo {
     height: 125px;
-    width: 150px;
+    width: auto;
 }
 
-.nav {
+nav {
+    border-radius: 0px 0px 14px 14px;
+}
+
+.navbar {
     background-color: #5C3D2E;
 }
 
-.nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-.nav li {
-    display: inline-block;
-    /* Muestra los elementos en línea horizontalmente */
-    margin-right: 20px;
+.navbar li {
+    margin-left: 10px;
+    margin-right: 10px;
     /* Espacio entre elementos de la lista */
 }
 
+.nav-link:hover {
+    text-decoration: underline;
+    color: #B85C38
+}
+
 /* Estilo para los enlaces */
-.nav a {
-    text-decoration: none;
+.navbar .nav-item .nav-link {
+
     color: #FFEBC9;
-    font-size: 30px;
     border-radius: 14px 14px 14px 14px;
-
 }
 
-.seleccion {
+.active {
     background-color: #B85C38;
+
 }
 
-.banner {
-    margin-bottom: 30px;
-    font-size: 40px;
-    color: #2D2424;
-    text-align: center;
-    text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.781);
-    padding-top: 72px;
-    height: 550px;
-    background-image: url("../assets/img/banner.jpeg");
-    background-position-y: -356px;
-    background-position-x: 0px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0px 11px 10px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 0px 0px 50px 51px;
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #B85C38;
 }
 
-.banner div {
-    background-color: #adadad5d;
-    box-shadow: 0px 9px 104px -24px rgba(0, 0, 0, 0.5) inset;
+#activo {
+    color: black;
 }
 
-.texto {
-    display: inline-block;
-}
-
-.texto h1 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.texto p {
-    text-align: justify;
-    margin-top: 20px;
-    line-height: 25px;
-    font-size: 20px;
-}
-
-.texto img {
-    margin: 20px;
-    width: 500px;
+.card-img {
     border-radius: 14px 14px 14px 14px;
+}
+
+.btn-color {
+    background-color: #B85C38;
+    color: #FFEBC9;
+    border: none;
+}
+
+.btn-color:hover {
+    background-color: #5C3D2E;
+    color: #FFEBC9
+}
+
+.btn-alt {
+    background-color: #FFEBC9;
+    color: #5C3D2E;
+    border: none;
+}
+
+.btn-alt:hover {
+    background-color: #5C3D2E;
+    color: #FFEBC9
 }
 
 footer {
@@ -100,8 +97,7 @@ footer {
 }
 
 .logofoot {
-    height: 125px;
-    width: 150px;
+    filter: brightness(0) invert(1) sepia(1) hue-rotate(30deg);
 }
 
 .iconos {
@@ -109,7 +105,16 @@ footer {
 }
 
 .iconos a {
+    text-decoration-line: none;
     color: #FFEBC9;
     padding: 10px;
     font-size: 50px;
+
+    :hover {
+        color: #B85C38;
+    }
+}
+
+.bordes {
+    border-radius: 14px 14px 14px 14px;
 }
