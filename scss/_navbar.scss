@@ -1,0 +1,27 @@
+@import 'variables';
+nav {
+  border-radius: 0px 0px 14px 14px;
+  &.navbar {
+    background-color: $secondary-color;
+  }
+}
+.navbar li {
+  margin-left: 10px;
+  margin-right: 10px;
+  /* Espacio entre elementos de la lista */
+}
+/* Estilo para los enlaces */
+.navbar .nav-item .nav-link {
+  color: $primary-color;
+  border-radius: 14px 14px 14px 14px;
+}
+.active {
+  background-color: $tertiary-color;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  text-decoration: underline;
+  color: $tertiary-color;
+}
+#activo {
+    color: $black;
+}

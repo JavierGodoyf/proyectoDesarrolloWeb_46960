@@ -8,15 +8,6 @@
 header {
     background-color: #FFEBC9;
     border-radius: 14px 14px 0px 0px;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    :hover {
-        color: black
-    }
 }
 
 header a {

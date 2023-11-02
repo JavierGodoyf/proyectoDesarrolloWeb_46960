@@ -1,0 +1,11 @@
+@import 'variables';
+
+@mixin boton($color, $background){
+  background-color: $background;
+  color: $color;
+  border: none;
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}

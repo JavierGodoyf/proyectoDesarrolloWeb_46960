@@ -1,0 +1,25 @@
+@import 'variables';
+footer {
+  padding: 10px;
+  color: $primary-color;
+  background-color: $secondary-color;
+  border-radius: 14px 14px 14px 14px;
+}
+.logofoot {
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(30deg);
+}
+.iconos {
+  margin-top: 10px;
+}
+.iconos a {
+  text-decoration-line: none;
+  color: $primary-color;
+  padding: 10px;
+  font-size: 50px;
+}
+.iconos a:hover {
+  color: $tertiary-color;
+}
+.bordes {
+  border-radius: 14px 14px 14px 14px;
+}

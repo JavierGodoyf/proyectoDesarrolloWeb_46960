@@ -1,0 +1,8 @@
+@import 'variables';
+@import 'mixins';
+.btn-color {
+    @include boton($primary-color,$tertiary-color);
+}
+.btn-alt {
+    @include boton($secondary-color,$primary-color);
+}
