@@ -1,5 +1,4 @@
 @import 'variables';
-
 nav {
   border-radius: 0px 0px 14px 14px;
   &.navbar {
@@ -16,15 +15,13 @@ nav {
   color: $primary-color;
   border-radius: 14px 14px 14px 14px;
 }
-
 .active {
   background-color: $tertiary-color;
 }
-
 .navbar-light .navbar-nav .nav-link:hover {
   text-decoration: underline;
   color: $tertiary-color;
 }
 #activo {
     color: $black;
-  }
+}

@@ -3,16 +3,13 @@ header {
     background-color: $primary-color;
     border-radius: 14px 14px 0px 0px;
 }
-
 header a {
     text-decoration: none;
     color: $black;
 }
-
 header a:hover {
     color: $black;
 }
-
 .logo {
     height: 125px;
     width: auto;
