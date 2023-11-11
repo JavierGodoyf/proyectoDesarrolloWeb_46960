@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria | Miau Café</title>
     <meta name="description"
-        content="Explora la galería de productos en Miau Café y descubre nuestra variedad en nuestro menú.">
+        content="Descubre la exquisita variedad de productos en el menú de Miau Café. Explora nuestra galería y sumérgete en la deliciosa experiencia que ofrecemos. ¡Encuentra tu nueva delicia favorita entre gatos y sabores!">
     <meta name="keywords"
         content="Miau Café, galería de productos, productos para amantes de gatos, café para gatos, productos únicos">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body class="container-fluid p-3">
+    <script>
+        AOS.init();
+    </script>
     <header>
         <a href="../index.html" class="d-flex align-items-center justify-content-center">
             <img src="../assets/img/logo_cat_cafe.png" alt="Logo Miau Café" class="logo">
@@ -67,32 +72,40 @@
                 recorrido visual que te hará ronronear de placer!</p>
         </div>
         <div class="d-flex flex-wrap justify-content-center">
-            <img src="../assets/img/carta1.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="Capuccino ">
-            <img src="../assets/img/carta2.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="Té canela y limon">
-            <img src="../assets/img/carta3.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="Hotcakes de Nutella fresa">
-            <img src="../assets/img/carta4.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="Sandwich de huevo tocino">
-            <img src="../assets/img/carta5.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="Sandwich de palta y huevo">
-            <img src="../assets/img/carta6.jpg" class="col-12 col-lg-3 rounded-3 m-3" alt="Pastel de Zanahoria">
+            <img src="../assets/img/carta1.jpg" class="col-12 col-lg-3 rounded-3 m-3" data-aos="flip-right"
+                data-aos-anchor-placement="bottom" data-aos-delay="0" alt="Capuccino ">
+            <img src="../assets/img/carta2.jpg" class="col-12 col-lg-3 rounded-3 m-3" data-aos="flip-down"
+                data-aos-anchor-placement="bottom" data-aos-delay="300" alt="Té canela y limon">
+            <img src="../assets/img/carta3.jpg" class="col-12 col-lg-3 rounded-3 m-3" data-aos="flip-left"
+                data-aos-anchor-placement="bottom" data-aos-delay="600" alt="Hotcakes de Nutella fresa">
+            <img src="../assets/img/carta4.jpg" class="col-12 col-lg-3 rounded-3 m-3" data-aos="flip-right"
+                data-aos-anchor-placement="bottom" data-aos-delay="900" alt="Sandwich de huevo tocino">
+            <img src="../assets/img/carta5.jpg" class="col-12 col-lg-3 rounded-3 m-3" data-aos="flip-up"
+                data-aos-anchor-placement="bottom" data-aos-delay="1200" alt="Sandwich de palta y huevo">
+            <img src="../assets/img/carta6.jpg" class="col-12 col-lg-3 rounded-3 m-3" data-aos="flip-left"
+                data-aos-anchor-placement="bottom" data-aos-delay="1500" alt="Pastel de Zanahoria">
         </div>
     </main>
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="d-flex justify-content-between px-3 flex-wrap mx-auto ">
-                <img src="../assets/img/logo_cat_cafe.png" alt="Logo Miau Café"
-                    class="logo logofoot col-12 col-lg-1 mx-auto">
-                <div class="pt-4 col-12 col-lg-7">
-                    <p><i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
-                    <p><i class="fa-solid fa-phone"></i> : +56 9 8765 4321 </p>
-                    <p><i class="fa-solid fa-clock"></i> : Lunes a domingo - 9:00 hrs a 20:00 hrs</p>
-                </div>
-                <div class="iconos col-12 col-lg-3 text-center">
-                    <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <div class="animaciones">
+        <footer data-aos="fade-up" data-aos-duration="1000" data-aos-once=true class="container-fluid ">
+            <div class="row">
+                <div class="d-flex justify-content-between px-3 flex-wrap mx-auto ">
+                    <img src="../assets/img/logo_cat_cafe.png" alt="Logo Miau Café"
+                        class="logo logofoot col-12 col-lg-1 mx-auto">
+                    <div class="pt-4 col-12 col-lg-7">
+                        <p><i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                        <p><i class="fa-solid fa-phone"></i> : +56 9 8765 4321 </p>
+                        <p><i class="fa-solid fa-clock"></i> : Lunes a domingo - 9:00 hrs a 20:00 hrs</p>
+                    </div>
+                    <div class="iconos col-12 col-lg-3 text-center">
+                        <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 

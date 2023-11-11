@@ -33,6 +33,10 @@
   overflow: hidden;
 }
 
+.card-michi {
+  width: 25rem;
+}
+
 header {
   background-color: #FFEBC9;
   border-radius: 14px 14px 0px 0px;
