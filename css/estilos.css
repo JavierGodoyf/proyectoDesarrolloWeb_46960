@@ -29,6 +29,10 @@
   border-radius: 14px 14px 14px 14px;
 }
 
+.animaciones {
+  overflow: hidden;
+}
+
 header {
   background-color: #FFEBC9;
   border-radius: 14px 14px 0px 0px;
@@ -46,6 +50,10 @@ header a:hover {
 .logo {
   height: 125px;
   width: auto;
+}
+
+#textoLogo {
+  font-size: 2.5rem;
 }
 
 .navbar {
