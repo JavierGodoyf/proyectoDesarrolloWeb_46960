@@ -37,6 +37,10 @@
   width: 25rem;
 }
 
+body {
+  background-image: url(../assets/img/fondo.webp);
+}
+
 header {
   background-color: #FFEBC9;
   border-radius: 14px 14px 0px 0px;
