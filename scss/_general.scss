@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Gabarito', sans-serif;
+}
+
+.card-img {
+  border-radius: 14px 14px 14px 14px;
+}
+
+.animaciones {
+  overflow: hidden;
+}
+
+.card-michi {
+  width: 25rem;
+}
+
+body {
+  background-image: url(../assets/img/fondo.webp);
+}

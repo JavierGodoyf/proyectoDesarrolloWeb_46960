@@ -1,0 +1,12 @@
+@import 'variables';
+
+@mixin boton($cTexto, $cFondo) {
+  background-color: $cFondo;
+  color: $cTexto;
+  border: none;
+
+  &:hover {
+    background-color: map-get($colores, secundario);
+    color: map-get($colores, primario);
+  }
+}

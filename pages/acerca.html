@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca | Miau Café</title>
+    <meta name="description"
+        content="Explora la historia de Miau Café, el lugar donde los amantes de los gatos se reúnen para disfrutar de una experiencia única. Conoce a nuestros adorables mininos y sumérgete en la magia de nuestro cat café. ¡Descubre más aquí!">
+    <meta name="keywords" content="Miau Café, cat café, historia, amantes de los gatos, café para gatos">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
-    <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <script src="https://kit.fontawesome.com/f836eb7316.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </head>
 
 <body class="container-fluid p-3">
+    <script>
+        AOS.init();
+    </script>
 
     <body class="container-fluid p-3">
         <header>
             <a href="../index.html" class="d-flex align-items-center justify-content-center">
-                <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo">
+                <img src="../assets/img/logo_cat_cafe.png" alt="Logo Miau Cafe" class="logo">
                 <div class="text-center mx-4 pt-3">
-                    <h1 class="mb-0">Miau café</h1>
+                    <h2 class="mb-0" id="textoLogo">Miau café</h2>
                     <p>Un café para ronronear</p>
                 </div>
             </a>
         </header>
-        <!--intente poner el navbar sticky cuando bajara pero no funcionaba dentro del header y fuera de el funciona correctamente-->
         <nav class="navbar navbar-expand-lg navbar-light bg-brown sticky-top">
             <div class="container">
                 <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse"
@@ -53,69 +60,55 @@
             </div>
         </nav>
         <main>
-            <section>
-                <div class="container my-5 text-center">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 ">
-                            <h1>Acerca</h1>
-                            <p>La historia de Miau Café comenzó con la visión de crear un espacio donde los amantes de
-                                los
-                                gatos
-                                pudieran disfrutar de la compañía de estos encantadores felinos mientras saborean una
-                                taza
-                                de
-                                café o
-                                té. Fundada por un grupo de apasionados dueños de gatos, nuestra cafetería es el hogar
-                                permanente de
-                                una pandilla de gatos consentidos que forman parte integral de nuestra familia y, por
-                                supuesto,
-                                de
-                                la experiencia que ofrecemos a nuestros visitantes.
-
-                                En Miau Café, nos enorgullece brindar un entorno seguro y acogedor para nuestros gatos,
-                                garantizando
-                                que vivan vidas felices y saludables. Cada uno de ellos tiene su propia historia y
-                                personalidad
-                                única, lo que agrega un toque especial a la atmósfera de nuestra cafetería. Ven y únete
-                                a
-                                nuestra
-                                historia, donde la pasión por los gatos y la pasión por el café se unen para crear un
-                                lugar
-                                mágico
-                                donde el amor felino es una constante. ¡Bienvenido a Miau Café, donde nuestros gatos son
-                                parte.
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <img src="../assets/img/logo_cat_cafe.png" alt="" class="img-fluid">
-                        </div>
+            <section class="container my-2">
+                <div class="row animaciones">
+                    <div data-aos="fade-center" class="col-12 col-lg-6 ">
+                        <h1 class="text-center mt-5 mb-3">Acerca</h1>
+                        <p>La historia de Miau Café comenzó con la visión de crear un espacio donde los amantes de
+                            los gatos pudieran disfrutar de la compañía de estos encantadores felinos mientras
+                            saborean una taza de café o té. Fundada por un grupo de apasionados dueños de gatos,
+                            nuestra cafetería es el hogar permanente de una pandilla de gatos consentidos que forman
+                            parte integral de nuestra familia y, por supuesto, de la experiencia que ofrecemos a
+                            nuestros visitantes.</p>
+                        <p>En Miau Café, nos enorgullece brindar un entorno seguro y acogedor para nuestros gatos,
+                            garantizando que vivan vidas felices y saludables. Cada uno de ellos tiene su propia
+                            historia y personalidad única, lo que agrega un toque especial a la atmósfera de nuestra
+                            cafetería. Ven y únete a nuestra historia, donde la pasión por los gatos y la pasión por
+                            el café se unen para crear un lugar mágico donde el amor felino es una constante.
+                            ¡Bienvenido a Miau Café, donde nuestros gatos son parte.</p>
                     </div>
-                    <div>
+                    <div data-aos="zoom-in" class="col-12 col-lg-6">
+                        <img src="../assets/img/logo_cat_cafe.png" alt="Logo Miau Café" class="img-fluid">
                     </div>
-                    <iframe width="100%" height="600"
-                        src="https://www.youtube.com/embed/KmeSy7FPdCA?si=zeQ-2SmNcNuZqREB&amp;controls=0"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
                 </div>
+                <iframe width="100%" height="600"
+                    src="https://www.youtube.com/embed/KmeSy7FPdCA?si=zeQ-2SmNcNuZqREB&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen data-aos="fade-up" data-aos-duration="1000" data-aos-once=true></iframe>
             </section>
         </main>
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="d-flex justify-content-between px-3 flex-wrap mx-auto ">
-                    <img src="../assets/img/logo_cat_cafe.png" alt="Logo" class="logo logofoot col-12 col-lg-1 mx-auto">
-                    <div class="pt-4 col-12 col-lg-7">
-                        <p><i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
-                        <p><i class="fa-solid fa-phone"></i> : +56 9 8765 4321 </p>
-                        <p><i class="fa-solid fa-clock"></i> : Lunes a domingo - 9:00 hrs a 20:00 hrs</p>
-                    </div>
-                    <div class="iconos col-12 col-lg-3 text-center">
-                        <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <div class="animaciones">
+            <footer data-aos="fade-up" data-aos-duration="1000" data-aos-once=true class="container-fluid ">
+                <div class="row">
+                    <div class="d-flex justify-content-between px-3 flex-wrap mx-auto ">
+                        <img src="../assets/img/logo_cat_cafe.png" alt="Logo Miau Café"
+                            class="logo logofoot col-12 col-lg-1 mx-auto">
+                        <div class="pt-4 col-12 col-lg-7">
+                            <p><i class="fa-solid fa-store"></i> : Algún lugar de Viña del Mar, Local 3</p>
+                            <p><i class="fa-solid fa-phone"></i> : +56 9 8765 4321 </p>
+                            <p><i class="fa-solid fa-clock"></i> : Lunes a domingo - 9:00 hrs a 20:00 hrs</p>
+                        </div>
+                        <div class="iconos col-12 col-lg-3 text-center">
+                            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
         <script src="../js/bootstrap.bundle.min.js"></script>
     </body>
 

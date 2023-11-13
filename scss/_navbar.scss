@@ -1,0 +1,29 @@
+@import 'variables';
+
+.navbar {
+  background-color: map-get($colores, secundario);
+  border-radius: 0px 0px 14px 14px;
+}
+
+.navbar li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar .nav-item .nav-link {
+  color: map-get($colores, primario);
+  border-radius: 14px 14px 14px 14px;
+}
+
+.active {
+  background-color: map-get($colores, terciario);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+
+  color: map-get($colores, terciario);
+}
+
+#activo {
+  color: map-get($colores, negro);
+}

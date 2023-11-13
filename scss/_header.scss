@@ -1,0 +1,24 @@
+@import 'variables';
+
+header {
+    background-color: map-get($colores, primario);
+    border-radius: 14px 14px 0px 0px;
+}
+
+header a {
+    text-decoration: none;
+    color: map-get($colores, negro);
+}
+
+header a:hover {
+    color: map-get($colores, negro);
+}
+
+.logo {
+    height: 125px;
+    width: auto;
+}
+
+#textoLogo {
+    font-size: 2.5rem;
+}
