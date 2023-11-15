@@ -1,130 +1,129 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Gabarito', sans-serif;
-}
-
-header {
-    background-color: #FFEBC9;
-    border-radius: 14px 14px 0px 0px;
-
-    a {
-        text-decoration: none;
-        color: black;
-    }
-
-    :hover {
-        color: black
-    }
-}
-
-header a {
-    text-decoration: none;
-    color: black;
-}
-
-header a:hover {
-    color: black
-}
-
-
-.logo {
-    height: 125px;
-    width: auto;
-}
-
-nav {
-    border-radius: 0px 0px 14px 14px;
-}
-
-.navbar {
-    background-color: #5C3D2E;
-}
-
-.navbar li {
-    margin-left: 10px;
-    margin-right: 10px;
-    /* Espacio entre elementos de la lista */
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-    color: #B85C38
-}
-
-/* Estilo para los enlaces */
-.navbar .nav-item .nav-link {
-
-    color: #FFEBC9;
-    border-radius: 14px 14px 14px 14px;
-}
-
-.active {
-    background-color: #B85C38;
-
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #B85C38;
-}
-
-#activo {
-    color: black;
-}
-
-.card-img {
-    border-radius: 14px 14px 14px 14px;
-}
-
 .btn-color {
-    background-color: #B85C38;
-    color: #FFEBC9;
-    border: none;
+  background-color: #B85C38;
+  color: #FFEBC9;
+  border: none;
 }
-
 .btn-color:hover {
-    background-color: #5C3D2E;
-    color: #FFEBC9
+  background-color: #5C3D2E;
+  color: #FFEBC9;
 }
 
 .btn-alt {
-    background-color: #FFEBC9;
-    color: #5C3D2E;
-    border: none;
+  background-color: #FFEBC9;
+  color: #5C3D2E;
+  border: none;
+}
+.btn-alt:hover {
+  background-color: #5C3D2E;
+  color: #FFEBC9;
 }
 
-.btn-alt:hover {
-    background-color: #5C3D2E;
-    color: #FFEBC9
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Gabarito", sans-serif;
+}
+
+.card-img {
+  border-radius: 14px 14px 14px 14px;
+}
+
+.animaciones {
+  overflow: hidden;
+}
+
+.card-michi {
+  width: 25rem;
+  background-color: rgba(255, 255, 255, 0.548);
+  border-radius: 14px 14px 14px 14px;
+}
+
+body {
+  background-image: url(../assets/img/fondo.webp);
+}
+
+a {
+  text-decoration: none;
+  color: #B85C38;
+}
+
+header {
+  background-color: #FFEBC9;
+  border-radius: 14px 14px 0px 0px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  color: black;
+}
+
+.logo {
+  height: 125px;
+  width: auto;
+}
+
+#textoLogo {
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-color: #5C3D2E;
+  border-radius: 0px 0px 14px 14px;
+}
+
+.navbar li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar .nav-item .nav-link {
+  color: #FFEBC9;
+  border-radius: 14px 14px 14px 14px;
+}
+
+.active {
+  background-color: #B85C38;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #B85C38;
+}
+
+#activo {
+  color: black;
 }
 
 footer {
-    padding: 10px;
-    color: #FFEBC9;
-    background-color: #5C3D2E;
-    border-radius: 14px 14px 14px 14px;
+  padding: 10px;
+  color: #FFEBC9;
+  background-color: #5C3D2E;
+  border-radius: 14px 14px 14px 14px;
 }
 
 .logofoot {
-    filter: brightness(0) invert(1) sepia(1) hue-rotate(30deg);
+  filter: brightness(0) invert(1) sepia(1) hue-rotate(30deg);
 }
 
 .iconos {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .iconos a {
-    text-decoration-line: none;
-    color: #FFEBC9;
-    padding: 10px;
-    font-size: 50px;
+  text-decoration-line: none;
+  color: #FFEBC9;
+  padding: 10px;
+  font-size: 50px;
 }
 
 .iconos a:hover {
-    color: #B85C38;
+  color: #B85C38;
 }
 
 .bordes {
-    border-radius: 14px 14px 14px 14px;
-}
+  border-radius: 14px 14px 14px 14px;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'mixins';
+
+.btn-color {
+    @include boton(map-get($colores, primario), map-get($colores, terciario));
+}
+
+.btn-alt {
+    @include boton(map-get($colores, secundario), map-get($colores, primario));
+}
