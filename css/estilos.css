@@ -35,10 +35,17 @@
 
 .card-michi {
   width: 25rem;
+  background-color: rgba(255, 255, 255, 0.548);
+  border-radius: 14px 14px 14px 14px;
 }
 
 body {
   background-image: url(../assets/img/fondo.webp);
+}
+
+a {
+  text-decoration: none;
+  color: #B85C38;
 }
 
 header {
