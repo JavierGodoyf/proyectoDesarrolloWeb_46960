@@ -6,5 +6,5 @@
 }
 
 .btn-alt {
-    @include boton(map-get($colores, secundario), map-get($colores, primario));
+    @include boton(map-get($colores, primario), map-get($colores, cuaternario));
 }
