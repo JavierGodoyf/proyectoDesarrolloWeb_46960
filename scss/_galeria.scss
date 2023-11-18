@@ -1,0 +1,15 @@
+.img-container {
+    overflow: hidden; // Oculta cualquier desbordamiento de la imagen
+    border-radius: 14px 14px 14px 14px;
+
+    &:hover {
+        .imgGal {
+            transition: transform 1s;
+            transform: scale(1.3);
+        }
+    }
+
+    .imgGal {
+        width: 100%;
+    }
+}

@@ -15,7 +15,7 @@
 
 .card-michi {
   width: 25rem;
-  background-color: rgba(255, 255, 255, 0.548);
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 14px 14px 14px 14px;
 }
 
@@ -26,6 +26,18 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: map-get($colores, terciario);
+
+  &:hover {
+    color: map-get($colores, cuaternario);
+  }
+}
+
+p {
+  font-size: large;
+}
+
+.texto-terciario {
   color: map-get($colores, terciario);
 }

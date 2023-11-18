@@ -5,27 +5,31 @@ footer {
   color: map-get($colores, primario);
   background-color: map-get($colores, secundario);
   border-radius: 14px 14px 0px 0px;
+
+  a {
+    text-decoration-line: none;
+    color: map-get($colores, primario);
+
+    &:hover {
+      color: map-get($colores, terciario);
+    }
+  }
 }
 
 .logofoot {
   filter: brightness(0) invert(1) sepia(1) hue-rotate(30deg);
+  margin-inline: auto;
 }
 
 .iconos {
-  margin-top: 10px;
-}
+  padding-top: 40px;
 
-.iconos a {
-  text-decoration-line: none;
-  color: map-get($colores, primario);
-  padding: 10px;
-  font-size: 50px;
-}
+  a {
+    padding: 10px;
+    font-size: 50px;
+  }
 
-.iconos a:hover {
-  color: map-get($colores, terciario);
-}
-
-.bordes {
-  border-radius: 14px 14px 14px 14px;
+  @media (max-width: 991px) {
+    padding-top: 0; // Elimina el padding-top en tamaños inferiores a "large"
+  }
 }

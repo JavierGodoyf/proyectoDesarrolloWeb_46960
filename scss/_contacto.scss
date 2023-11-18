@@ -8,3 +8,7 @@
 .btn-alt {
     @include boton(map-get($colores, primario), map-get($colores, cuaternario));
 }
+
+.bordes {
+    border-radius: 14px 14px 14px 14px;
+}
