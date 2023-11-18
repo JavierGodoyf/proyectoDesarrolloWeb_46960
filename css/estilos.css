@@ -70,7 +70,12 @@ a:hover {
 }
 
 p {
-  font-size: large;
+  font-size: larger;
+}
+@media (max-width: 991px) {
+  p {
+    font-size: medium;
+  }
 }
 
 .texto-terciario {

@@ -35,7 +35,11 @@ a {
 }
 
 p {
-  font-size: large;
+  font-size: larger;
+
+  @media (max-width: 991px) {
+    font-size: medium; // Elimina el padding-top en tamaños inferiores a "large"
+  }
 }
 
 .texto-terciario {
