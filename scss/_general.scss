@@ -1,3 +1,4 @@
+//archivo configuracion de estilos generales 
 * {
   margin: 0px;
   padding: 0px;
@@ -38,7 +39,7 @@ p {
   font-size: larger;
 
   @media (max-width: 991px) {
-    font-size: medium; // Elimina el padding-top en tamaños inferiores a "large"
+    font-size: medium; // cambia el tamaño de fuente en parrafos en tamaños inferiores a "large"
   }
 }
 

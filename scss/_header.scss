@@ -1,5 +1,4 @@
-@import 'variables';
-
+//archivo configuracion de estilos de header
 header {
     background-color: map-get($colores, primario);
     border-radius: 14px 14px 0px 0px;
@@ -20,5 +19,6 @@ header a:hover {
 }
 
 #textoLogo {
+    //para mantener el tamaño adecuado en el texto del logo
     font-size: 2.5rem;
 }

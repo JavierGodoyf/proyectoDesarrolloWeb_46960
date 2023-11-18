@@ -1,5 +1,4 @@
-@import 'variables';
-
+//archivo de configuracion de estilos de barra de navegacion
 .navbar {
   background-color: map-get($colores, secundario);
   border-radius: 0px 0px 14px 14px;
@@ -25,5 +24,6 @@
 }
 
 #activo {
+  // se utilizo para evitar que el hover cambiara el color de la fuente del elemento activo del navbar (quedaria del mismo color que el fondo)
   color: map-get($colores, negro);
 }

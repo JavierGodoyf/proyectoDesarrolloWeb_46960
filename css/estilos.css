@@ -164,6 +164,8 @@ footer a:hover {
   }
 }
 
+/*archivo de configuracion de estilos de la imagen de freepik
+  el codigo entregado por freepik tenia etiquetas style por lo cual lo traslade a un archivo sass */
 svg#freepik_stories-playful-cat:not(.animated) .animable {
   opacity: 0;
 }

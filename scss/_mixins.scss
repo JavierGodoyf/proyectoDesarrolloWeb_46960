@@ -1,5 +1,4 @@
-@import 'variables';
-
+//archivo de configuracion de mixines
 @mixin boton($cTexto, $cFondo) {
   background-color: $cFondo;
   color: $cTexto;

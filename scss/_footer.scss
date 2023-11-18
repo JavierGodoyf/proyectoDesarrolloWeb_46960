@@ -1,5 +1,4 @@
-@import 'variables';
-
+//archivo configuracion de estilos de footer
 footer {
   padding: 10px;
   color: map-get($colores, primario);
@@ -30,6 +29,6 @@ footer {
   }
 
   @media (max-width: 991px) {
-    padding-top: 0; // Elimina el padding-top en tamaños inferiores a "large"
+    padding-top: 0; // Elimina el padding-top en tamaños inferiores a "large" asi el footer no se ve con un espaciado de los iconos demasiado grande
   }
 }
