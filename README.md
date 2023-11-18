@@ -31,6 +31,7 @@ Quiero expresar mi agradecimiento de manera especial:
 
 - A la profesora Gisele Milagros, cuya dedicación y conocimientos han sido fundamentales para mi aprendizaje.
 - A mi tutora, Maria Laura Bisaccia, por su paciencia y guía durante todo el curso.
+- y al resto del equipo de tutores Lucila Fortunato y Alan Maldonado que respondieron consultas durante clases en el chat de zoom.
 
 ## Fuentes de imagenes
 - Freepik
