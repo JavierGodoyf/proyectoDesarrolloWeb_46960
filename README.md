@@ -20,7 +20,7 @@ Este proyecto es parte del curso de Desarrollo Web de Coderhouse y consiste en l
 ## Carpetas y Archivos Principales
 
 - **assets**: Contiene archivos multimedia como imágenes y fuentes.
-- **css**: Archivos CSS y SASS.
+- **css**: Archivos CSS generados via SASS.
 - **js**: Archivos JavaScript (no incluidos en la cursada).
 - **pages**: Páginas HTML del sitio.
 - **scss**: Archivos de estilo SASS.
